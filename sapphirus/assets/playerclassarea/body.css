@@ -296,7 +296,6 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 4;
    }
    
    #PNUMBER-FRENZY-FRAME {
@@ -329,6 +328,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 5;
    }
    
    #PNUMBER-CANVAS-FIELD {
