@@ -45,11 +45,11 @@
    "submenu": "ui/settings/mobcon"
    },
   {
-   "string": "setting_s_name",
+   "string": "setting_s_mobcon",
    "type": "button",
-   "desc": "setting_s_name_desc",
+   "desc": "setting_s_mobcon_desc",
    "action": "submenu",
-   "submenu": "ui/settings/playername"
+   "submenu": "ui/settings/mobcon"
   }
  ]
 }
