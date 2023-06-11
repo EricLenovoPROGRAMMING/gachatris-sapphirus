@@ -1107,7 +1107,7 @@ class GachatrisPlayer {
   if (!gameManager.movingReplay) {
    let n = this.canvasses.character;
    this.clearCanvas("character");
-   /*this.canvasCtx.character.drawImage(
+   this.canvasCtx.character.drawImage(
     this.character.load[this.character.activeField],
     0,
     0,
