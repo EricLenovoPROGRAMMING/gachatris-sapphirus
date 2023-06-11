@@ -1117,7 +1117,7 @@ class GachatrisPlayer {
     0,
     n.width,
     n.height
-   );*//* */
+   );/* */
   }
  }
  setExternalCharacter(type) {
