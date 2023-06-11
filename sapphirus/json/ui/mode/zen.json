@@ -1,0 +1,57 @@
+{
+ "header": "mode_zen",
+ "name": "mode_zen",
+ "props": [
+  {
+   "string": "mode_zen_desc",
+   "type": "text",
+   "text_type": "body",
+   "font_size": 1
+  },
+  {
+   "string": "mode_zen_isfrenzy",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "zen",
+   "parameter": "is_frenzy",
+   "default": 0
+  },
+  {
+   "string": "mode_zen_allspin",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "zen",
+   "parameter": "allspin",
+   "default": 0
+  },
+  {
+   "string": "mode_zen_allspin_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  {
+   "string": "mode_overall_pro_gachatris",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "overall",
+   "parameter": "pro_gachatris",
+   "default": 0
+  },
+  {
+   "string": "mode_overall_pro_gachatris_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  {
+   "string": "mode_start",
+   "type": "button",
+   "action": "initialize",
+   "init": [0, 1]
+  }
+ ],
+ "parameters": {}
+}

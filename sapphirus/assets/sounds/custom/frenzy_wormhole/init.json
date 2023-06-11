@@ -1,0 +1,48 @@
+{
+ "sources": {
+  "hit": "wormhole_hit.ogg",
+  "start": "wormhole_start.ogg",
+  "loop": "wormhole_loop.ogg",
+  "whitehole": "wormhole_towhitehole.ogg",
+  "blackhole": "wormhole_blackhole.ogg",
+  "break": "wormhole_break.ogg",
+  "transmit": "wormhole_transmit.ogg"
+ },
+ "main": {
+  "hit": {
+   "src": "hit",
+   "loop": false,
+   "html5": false
+  },
+  "start": {
+   "src": "start",
+   "loop": false,
+   "html5": false
+  },
+  "loop": {
+   "src": "loop",
+   "loop": true,
+   "html5": false
+  },
+  "whitehole": {
+   "src": "whitehole",
+   "loop": false,
+   "html5": false
+  },
+  "blackhole": {
+   "src": "blackhole",
+   "loop": false,
+   "html5": false
+  },
+  "transmit": {
+   "src": "transmit",
+   "loop": false,
+   "html5": false
+  },
+  "break": {
+   "src": "break",
+   "loop": false,
+   "html5": false
+  }
+  }
+}

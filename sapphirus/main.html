@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+ 15:46 July 13, 2022
+ Gachatris Sapphirus UC
+-->
+<!--This is an object-oriented game-->
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ <title>Gachatris Sapphirus Alpha</title>
+ <link rel="stylesheet" href="css.css">
+ <style id="playerStyles"></style>
+</head>
+
+<body>
+ <gtris-screen id="screen">
+  <gtris-main id="core" class="fullScreen">
+   <gtris-error-screen id="errorScreen">
+    <gtris-error-stack id="errorStack">
+    </gtris-error-stack>
+   </gtris-error-screen>
+   <gtris-gameBg id="gameBg">
+    <img id="gameBgImg" />
+    <!--video id="gameBgVid" style=position:absolute;width:100%;height:100%;pointer-events:none loop>
+     <source src="assets/background/video.mp4" type=video/mp4>
+    </video-->
+    <gtris-bgclr id="gameBgClr"></gtris-bgclr>
+   </gtris-gameBg>
+   <gtris-placement id="SandboxArea">
+   </gtris-placement>
+   <gtris-sandbox-layers id="sandboxLayer">
+    <gtris-foreground-layer id="foregroundLayer">
+     <gtris-layer-ft id="overheadLayer">
+      <gtris-layer-ovrrhead-text id="overheadText"></gtris-layer-ovrrhead-text>
+     </gtris-layer-ft>
+    </gtris-foreground-layer>
+    <gtris-winner-screen id="winnerScreen">
+     <gtris-winchar-padding id="winCharPad">
+      <gtris-winner-character-div id="winnerCharacterDiv">
+       <img id="winnerCharacter" />
+      </gtris-winner-character-div>
+     </gtris-winchar-padding>
+     <gtris-winner-texts id="winnerTexts">
+      <gtris-winner-text-div id="WINNER-DIV-TEXT1">
+       <gtris-winner-text id="WINNER-TEXT1">
+       </gtris-winner-text>
+      </gtris-winner-text-div>
+      <gtris-winner-text-div id="WINNER-DIV-TEXT2">
+       <gtris-winner-text id="WINNER-TEXT2">
+       </gtris-winner-text>
+      </gtris-winner-text-div>
+      <gtris-winner-text-div id="WINNER-DIV-TEXT3">
+       <gtris-winner-text id="WINNER-TEXT3">
+       </gtris-winner-text>
+      </gtris-winner-text-div>
+     </gtris-winner-texts>
+    </gtris-winner-screen>
+    <gtris-foreground-color id="foregroundColor"></gtris-foreground-color>
+   </gtris-sandbox-layers>
+   <gtris-mobile-button-area id="mobileButtonScreen"></gtris-mobile-button-area>
+   <gtris-loader id="loader" class="fullScreen">
+    <gtris-loading-dyk id="loaderImageDiv">
+     <img id="loaderImage" src="" />
+     <gtris-dyk-text id="loaderTextDiv">
+      <gtris-dyk-textcontent id="loaderText"></gtris-dyk-textcontent>
+     </gtris-dyk-text>
+    </gtris-loading-dyk>
+    <gtris-loading-detail id="loadingDetail"></gtris-loading-detail>
+    <gtris-loading-div id="loadingDivider">
+     <gtris-loading-ball id="loadingBall">
+      <gtris-loading-ball-border id="loadingBorderBall"></gtris-loading-ball-border>
+     </gtris-loading-ball>
+     <gtris-loading-text>Now Loading...</gtris-loading-text>
+    </gtris-loading-div>
+   </gtris-loader>
+   <gtris-ready-signal id="readySignalDiv">
+    <gtris-ready-signal-text id="readySignalText">READY</gtris-ready-signal-text>
+   </gtris-ready-signal>
+   <gtris-pause-menu id="pauseMenuViewer">
+    <gtris-list-cell-pause-menu>
+     <gtris-normal-button class="pausemenu-button" onclick="gameManager.pauseGame(!gameManager.isPaused);">
+      <gtris-large-text-button id="PAUSEBUTTON-RESUME-TEXT">
+       Unpause
+      </gtris-large-text-button>
+      <gtris-small-text-button id="PAUSEBUTTON-RESUME-DESC">
+       Resume the current session.
+      </gtris-small-text-button>
+     </gtris-normal-button>
+    </gtris-list-cell-pause-menu>
+    <gtris-list-cell-pause-menu>
+     <gtris-normal-button class="pausemenu-button" onclick="gameManager.prepareInitialization();">
+      <gtris-large-text-button id="PAUSEBUTTON-STARTOVER-TEXT">
+       Start Over
+      </gtris-large-text-button>
+      <gtris-small-text-button id="PAUSEBUTTON-STARTOVER-DESC">
+       Start the current session over.
+      </gtris-small-text-button>
+     </gtris-normal-button>
+    </gtris-list-cell-pause-menu>
+    <gtris-list-cell-pause-menu>
+     <gtris-normal-button class="pausemenu-button" onclick="gameManager.endGame();">
+      <gtris-large-text-button id="PAUSEBUTTON-STOP-TEXT">
+       Force End
+      </gtris-large-text-button>
+      <gtris-small-text-button id="PAUSEBUTTON-STOP-DESC">
+       Stop the current session.
+      </gtris-small-text-button>
+     </gtris-normal-button>
+    </gtris-list-cell-pause-menu>
+   </gtris-pause-menu>
+   
+   <gtris-main-menu id="MAIN-MENU">
+    <canvas id="MAIN-MENU-CANVAS-BG"></canvas>
+    <canvas id="MAIN-MENU-CANVAS-BG-PARTICLE"></canvas>
+    <canvas id="MAIN-MENU-CANVAS-LOGO"></canvas>
+    <gtris-mm-buttons-set id="MAIN-MENU-CONTAINER"></gtris-mm-buttons-set>
+   </gtris-main-menu>
+   
+   <gtris-menu-overflow id="overflow-fullMenu">
+
+    <gtris-menus id="fullMenu" class="fullScreen">
+     <gtris-header id="contentHeader">
+      <img src="" id="headerIcon" />
+      <gtris-header-back id="headerBackButton">
+      <img src="" id="headerBackIcon" />
+      </gtris-header-back>
+      <gtris-header-align id="headerTitleAlign">
+       <gtris-header-title id=headerTitle>Gachatris Sapphirus Alpha</gtris-header-title>
+      </gtris-header-align>
+     </gtris-header>
+     <gtris-menu-viewer id="menuViewer" class="fullScreen">
+      <gtris-menu-section class="menuSection" id="MAINMENU-SECTION">
+       <!--gtris-menu-section-division id="MAINMENU-DIV">
+        <gtris-mainmenu-button class="mainMenu-buttons mainMenu-buttons-available" id="MAINMENU-START">
+         <gtris-mainmenu-text class="mainMenu-buttonTexts">Play (alpha)</gtris-mainmenu-text>
+        </gtris-mainmenu-button>
+        <gtris-mainmenu-button class="mainMenu-buttons mainMenu-buttons-available" id="MAINMENU-REPLAY">
+         <gtris-mainmenu-text class="mainMenu-buttonTexts">Replay Center (alpha)</gtris-mainmenu-text>
+        </gtris-mainmenu-button>
+        <gtris-mainmenu-button class="mainMenu-buttons mainMenu-buttons-available" id="MAINMENU-SETTINGS">
+         <gtris-mainmenu-text class="mainMenu-buttonTexts">Settings</gtris-mainmenu-text>
+        </gtris-mainmenu-button>
+        <gtris-mainmenu-button class="mainMenu-buttons" id="MAINMENU-BLANK3">
+         <gtris-mainmenu-text class="mainMenu-buttonTexts">???</gtris-mainmenu-text>
+        </gtris-mainmenu-button>
+       </gtris-menu-section-division-->
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="SUBMENU-SECTION">
+       <gtris-submenu-div id="SUBMENU-DIV"></gtris-submenu-div>
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="GAME-END-SECTION">
+       <gtris-gameend-div id="GAME-END-DIV">
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center; color: #fff">
+         <gtris-menu-text id="MENU-TEXT-RESULT" style="font-size:3em; text-align: center">Game Over</gtris-menu-text>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center; color: #fff">
+         <gtris-menu-text id="MENU-TEXT-STATS" style="font-size:1em; text-align: center"></gtris-menu-text>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center">
+         <gtris-normal-button2 class="initialize-button" onclick="gameManager.prepareInitialization(gameManager.mode, gameManager.playersCount); gameMenu.showHideMenu(false);">
+          <gtris-small-text-button id="MENU-BUTTONTEXT-STARTOVER" style="pointer-events: none;font-size:1.3em;margin-left:0.4em; position: relative;">Start Over</gtris-small-text-button>
+         </gtris-normal-button2>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center">
+         <gtris-normal-button2 class="initialize-button" onclick="gameManager.startReplay(); gameMenu.showHideMenu(false);">
+          <gtris-small-text-button id="MENU-BUTTONTEXT-REPLAY" style="pointer-events: none;font-size:1.3em;margin-left:0.4em; position: relative;">View Replay</gtris-small-text-button>
+         </gtris-normal-button2>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center">
+         <gtris-normal-button2 class="initialize-button" onclick="gameReplayer.data = JSON.stringify(gameManager.replayData); gameMenu.switchMenu('add', 'ui/replay');">
+          <gtris-small-text-button id="MENU-BUTTONTEXT-REPLAY" style="pointer-events: none;font-size:1.3em;margin-left:0.4em; position: relative;">Replay Center</gtris-small-text-button>
+         </gtris-normal-button2>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center">
+         <gtris-normal-button2 class="initialize-button" onclick="gameMenu.switchMenu('add','ui/replay/save')">
+          <gtris-small-text-button id="MENU-BUTTONTEXT-REPLAY" style="pointer-events: none;font-size:1.3em;margin-left:0.4em; position: relative;">Save Local Replay</gtris-small-text-button>
+         </gtris-normal-button2>
+        </gtris-list-cell>
+        <gtris-list-cell style="width:100%;display:flex;justify-content:center;align-items: center">
+         <gtris-normal-button2 class="mainmenu-button" onclick="gameMenu.switchMenu('set', ''); musicPlayer.playMfx(['menu']);">
+          <gtris-small-text-button id="MENU-BUTTONTEXT-TOMAIN" style="pointer-events: none;font-size:1.3em;margin-left:0.4em; position: relative;">Main Menu</gtris-small-text-button>
+         </gtris-normal-button2>
+        </gtris-list-cell>
+       </gtris-gameend-div>
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="CHARACTER-SELECTION-SECTION">
+       <gtris-character-section id="CHARACTER-LIST-GRID">
+       </gtris-character-section>
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="AI-LIST-SECTION">
+       <gtris-character-section id="AI-LIST-GRID">
+       </gtris-character-section>
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="REPLAYLIST-SECTION">
+       <gtris-replist-div id="SAVED-REPLAY-LIST-CONTROLLER"></gtris-replist-div>
+       <gtris-replist-div id="SAVED-REPLAY-LIST"></gtris-replist-div>
+      </gtris-menu-section>
+      <gtris-menu-section class="menuSection" id="VERSION-LIST-SECTION">
+       <gtris-character-section id="VERSION-LIST-GRID">
+       </gtris-character-section>
+      </gtris-menu-section>
+      
+     </gtris-menu-viewer>
+    </gtris-menus>
+    <gtris-loading-menu id="loadingMenu" class="fullScreen">
+     <gtris-loadmenu-text id="loadingMenuText">Please wait a moment.</gtris-loadmenu-text>
+    </gtris-loading-menu>
+   </gtris-menu-overflow>
+   <gtris-splash id="splashScreen">
+    <gtris-splashtext id="splashText"></gtris-splashtext>
+    <gtris-splash-canvas-holder id="splashVideoHolder">
+     <video id="splashVideo" autoplay muted></video>
+    </gtris-splash-canvas-holder>
+   </gtris-splash>
+  </gtris-main>
+  <gtris-particles id="particleHolder">
+   <canvas id="particleCanvas"></canvas>
+   <gtris-text-particles id="particleElementDiv"></gtris-text-particles>
+  </gtris-particles>
+
+ </gtris-screen>
+
+
+ <gtris-skin-hidden>
+  <img id="SkinImage" />
+  <canvas id="SkinCanvas"></canvas>
+  <img id="SkinImageParticle" />
+  <canvas id="SkinCanvasParticle"></canvas>
+ </gtris-skin-hidden>
+
+<script src="./main.js" type="text/javascript"></script> <!---->
+
+</body>
+
+</html>

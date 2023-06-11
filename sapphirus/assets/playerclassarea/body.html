@@ -1,0 +1,102 @@
+<gtris-playerclassarea id="PNUMBER-PLAYERCLASSAREA">
+ <gtris-playerclassarea-padding id="PNUMBER-PADDING">
+  <gtris-body-sway id="PNUMBER-BODY-SWAY">
+  <gtris-body-sway id="PNUMBER-BODY-SHAKE">
+   <gtris-body id="PNUMBER-BODY">
+    <gtris-placement id="PNUMBER-LP">
+     <gtris-hand id="PNUMBER-HOLDH">
+      <gtris-placeholder id="PNUMBER-HOLDP" class="PNUMBER-BACKGROUND-CLASS">
+       <gtris-text-inPlace id="PNUMBER-HOLD" class="PNUMBER-TEXT-INPLACE">HOLD</gtris-text-inPlace>
+      </gtris-placeholder>
+      <canvas id="PNUMBER-CANVAS-HOLD"></canvas>
+     </gtris-hand>
+    </gtris-placement>
+    <gtris-meterBar-container id="PNUMBER-METERBAR-CONTAINER-LEFT" class="PNUMBER-BORDER-CLASS">
+     <gtris-meterBar id="PNUMBER-METERBAR-LEFT"></gtris-meterBar>
+    </gtris-meterBar-container>
+    <gtris-playField id="PNUMBER-FIELD" class="PNUMBER-BORDER-CLASS">
+     <canvas id="PNUMBER-CANVAS-CHARACTER" width="300" height="612" />
+     <gtris-frenzy id="PNUMBER-FRENZY-FRAME">
+      <canvas id="PNUMBER-FRENZY-IMAGE"></canvas>
+      <gtris-fcolor id="PNUMBER-FRENZY-COLOR"></gtris-fcolor>
+      <gtris-frenzy-timer id="PNUMBER-FRENZY-TIMER">0</gtris-frenzy-timer>
+     </gtris-frenzy>
+     <canvas id="PNUMBER-CANVAS-LINECLEAR"></canvas>
+     <canvas id="PNUMBER-CANVAS-FIELD"></canvas>
+     <canvas id="PNUMBER-CANVAS-FLASH-FIELD"></canvas>
+     <canvas id="PNUMBER-CANVAS-PIECE"></canvas>
+    </gtris-playField>
+    <gtris-meterBar-container id="PNUMBER-METERBAR-CONTAINER-RIGHT" class="PNUMBER-BORDER-CLASS">
+     <gtris-meterBar id="PNUMBER-METERBAR-BEHIND-RIGHT"></gtris-meterBar>
+     <gtris-meterBar id="PNUMBER-METERBAR-RIGHT"></gtris-meterBar>
+    </gtris-meterBar-container>
+    <gtris-placement id="PNUMBER-RP">
+     <gtris-hand id="PNUMBER-NEXTH">
+      <gtris-placeholder id="PNUMBER-NEXTP" class="PNUMBER-BACKGROUND-CLASS">
+       <gtris-text-inPlace id="PNUMBER-NEXT" class="PNUMBER-TEXT-INPLACE">NEXT</gtris-text-inPlace>
+      </gtris-placeholder>
+      <canvas id="PNUMBER-CANVAS-NEXT"></canvas>
+     </gtris-hand>
+     <canvas id="PNUMBER-CANVAS-QUEUE"></canvas>
+    </gtris-placement>
+    <gtris-body-layer id="PNUMBER-BODY-LAYER">
+     <gtris-clearTexts id="PNUMBER-CLEARTEXTS">
+      <gtris-clearTexts-tSpin id="PNUMBER-CLEARTEXT-SPIN">Spin</gtris-clearTexts-tSpin>
+      <gtris-clearTexts-regular id="PNUMBER-CLEARTEXT-REGULAR">Double</gtris-clearTexts-regular>
+      <gtris-clearTexts-b2b id="PNUMBER-CLEARTEXT-B2B">Back-to-back x3</gtris-clearTexts-b2b>
+      <gtris-clearTexts-ren id="PNUMBER-CLEARTEXT-REN">2 REN</gtris-clearTexts-ren>
+      <gtris-clearTexts-spike id="PNUMBER-CLEARTEXT-SPIKE">10 SPIKE</gtris-clearTexts-spike>
+     </gtris-clearTexts>
+     <gtris-statistics id="PNUMBER-STATISTICS-BOX">
+      <gtris-statistics-name id="PNUMBER-STATISTICS-NAME-1">T-SPIN DOUBLES</gtris-statistics-name>
+      <gtris-statistics-value id="PNUMBER-STATISTICS-VALUE-1">0</gtris-statistics-value>
+      <gtris-statistics-name id="PNUMBER-STATISTICS-NAME-2">T-SPIN DOUBLES</gtris-statistics-name>
+      <gtris-statistics-value id="PNUMBER-STATISTICS-VALUE-2">0</gtris-statistics-value>
+      <gtris-statistics-name id="PNUMBER-STATISTICS-NAME-3">T-SPIN DOUBLES</gtris-statistics-name>
+      <gtris-statistics-value id="PNUMBER-STATISTICS-VALUE-3">0</gtris-statistics-value>
+      <gtris-statistics-name id="PNUMBER-STATISTICS-NAME-4">T-SPIN DOUBLES</gtris-statistics-name>
+      <gtris-statistics-value id="PNUMBER-STATISTICS-VALUE-4">0</gtris-statistics-value>
+      <gtris-statistics-timer id="PNUMBER-STATISTICS-TIMER">0:00:000</gtris-statistics-timer>
+     </gtris-statistics>
+     <gtris-score id="PNUMBER-SCORE"></gtris-score>
+     <gtris-nameplate id="PNUMBER-PLAYER-NAMEPLATE">
+      <gtris-nameplate-player-name id="PNUMBER-NAMEPLATE-NAME"></gtris-nameplate-player-name>
+     </gtris-nameplate>
+    </gtris-body-layer>
+   </gtris-body>
+  </gtris-body-sway>
+  </gtris-body-sway>
+ </gtris-playerclassarea-padding>
+ <gtris-playerclassarea-layer id="PNUMBER-TLAYER">
+  <gtris-hp-bar-div id="PNUMBER-HPBAR-DIV">
+   <gtris-hp-text-div1 id="PNUMBER-HP-TEXT-DIV">
+    <gtris-hp-text id="PNUMBER-HP-TEXT">HP</gtris-hp-text>
+   </gtris-hp-text-div1>
+   <gtris-hp-text-div2 id="PNUMBER-HP-METER-CONTAINER">
+     <gtris-meterBar id="PNUMBER-HP-METER-BEHIND"></gtris-meterBar>
+     <gtris-meterBar id="PNUMBER-HP-METER">
+      <gtris-meterBar id="PNUMBER-HP-METER-ACTIVE"></gtris-meterBar>
+     </gtris-meterBar>
+    <gtris-hp-text id="PNUMBER-HP-NUM-TEXT">2300</gtris-hp-text>
+    <gtris-hp-text-div id="PNUMBER-HP-WARNING-TEXT-DIV">
+     <gtris-hp-text id="PNUMBER-HP-WARNING-TEXT">WARNING!!!</gtris-hp-text>
+    </gtris-hp-text-div>
+   </gtris-hp-text-div2>
+  </gtris-hp-bar-div>
+  
+  <gtris-pc-layer id="PNUMBER-PCLAYER">
+   <gtris-perfectClearDiv id="PNUMBER-PCDIV">
+    <gtris-perfectClear id="PNUMBER-PERFECTCLEAR1">Perfect<br />Clear</gtris-perfectClear>
+    <gtris-perfectClear id="PNUMBER-PERFECTCLEAR2">Perfect<br />Clear</gtris-perfectClear>
+   </gtris-perfectClearDiv>
+  </gtris-pc-layer>
+  <gtris-extchar-div id="PNUMBER-EXTCHAR">
+   <gtris-external-character id="PNUMBER-CANVAS-EXTCHAR-DIV">
+    <gtris-external-character-frame id="PNUMBER-EXTERNAL-CHARFRAME">
+     <canvas id="PNUMBER-CANVAS-EXTCHAR" width="600" height="600" />
+    </gtris-external-character-frame>
+    <gtris-external-text id="PNUMBER-EXTERNAL-TEXT">YEAH</gtris-external-text>
+   </gtris-external-character>
+  </gtris-extchar-div>
+ </gtris-playerclassarea-layer>
+</gtris-playerclassarea>

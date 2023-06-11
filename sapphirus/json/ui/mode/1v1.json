@@ -1,0 +1,94 @@
+{
+ "header": "mode_1v1",
+ "name": "mode_1v1",
+ "props": [
+  {
+   "string": "mode_1v1_desc",
+   "type": "text",
+   "text_type": "body",
+   "font_size": 1
+  },
+  {
+   "string": "mode_players_ai_list_button",
+   "type": "button",
+   "desc": "mode_players_ai_list_desc",
+   "action": "onclick",
+   "onclick": "gameMenu.switchMenu(\"add\", \"character\", \"false\", \"4\", \"false\", \"false\", \"mode_players_ai_screen_header\", [`${gachatrisLanguage.transText1(\"mode_vs\")}`]); gachatrisPlayerContainer.refreshPlayerListGrid(); gachatrisPlayerContainer.resize();"
+  },
+  {
+   "string": "mode_1v1_isfrenzy",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "vs",
+   "parameter": "is_frenzy",
+   "default": 0
+  },
+  {
+   "string": "mode_1v1_frenzy_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  
+  {
+   "string": "mode_1v1_allspin",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "vs",
+   "parameter": "allspin",
+   "default": 0
+  },
+  {
+   "string": "mode_1v1_allspin_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  
+  
+  {
+   "string": "mode_overall_pro_gachatris",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "overall",
+   "parameter": "pro_gachatris",
+   "default": 0
+  },
+  {
+   "string": "mode_vs_pro_gachatris_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  
+  {
+   "string": "mode_1v1_reception",
+   "type": "settings_slider",
+   "category": "modes",
+   "parent_parameter": "vs",
+   "parameter": "reception",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "mode_1v1_wincount",
+   "type": "settings_slider",
+   "category": "modes",
+   "parent_parameter": "vs",
+   "parameter": "wincount",
+   "default": 1,
+   "disable_loc": "true"
+  },
+  
+  {
+   "string": "mode_start",
+   "type": "button",
+   "action": "initialize",
+   "init": [1, 2]
+  }
+
+ ]
+}

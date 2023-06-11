@@ -1,0 +1,71 @@
+{
+ "header": "mode_defense",
+ "name": "mode_defense",
+ "props": [
+  {
+   "string": "mode_defense_desc",
+   "type": "text",
+   "text_type": "body",
+   "font_size": 1
+  },
+  {
+   "string": "mode_players_ai_list_button",
+   "type": "button",
+   "desc": "mode_players_ai_list_desc",
+   "action": "onclick",
+   "onclick": "gameMenu.switchMenu(\"add\", \"character\", \"false\", \"4\", \"false\", \"false\", \"mode_players_ai_screen_header\", [`${gachatrisLanguage.transText1(\"mode_defense\")}`]); gachatrisPlayerContainer.refreshPlayerListGrid(); gachatrisPlayerContainer.resize();"
+  },
+  {
+   "string": "mode_defense_isfrenzy",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "defense",
+   "parameter": "is_frenzy",
+   "default": 0
+  },
+  {
+   "string": "mode_defense_frenzy_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  
+  {
+   "string": "mode_defense_allspin",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "defense",
+   "parameter": "allspin",
+   "default": 0
+  },
+  {
+   "string": "mode_defense_allspin_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  {
+   "string": "mode_overall_pro_gachatris",
+   "type": "mode_param_selector",
+   "can_open_window_by_click": false,
+   "parent_parameter": "overall",
+   "parameter": "pro_gachatris",
+   "default": 0
+  },
+  {
+   "string": "mode_vs_pro_gachatris_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },  {
+   "string": "mode_start",
+   "type": "button",
+   "action": "initialize",
+   "init": [3, 2]
+  }
+
+ ]
+}

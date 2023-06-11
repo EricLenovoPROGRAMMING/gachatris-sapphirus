@@ -1,0 +1,355 @@
+{
+ "name": "Gachatris Tetraplus",
+ "sources": {
+  "main": {
+   "harddrop": "harddrop.ogg",
+   "line1": "line1.ogg",
+   "line2": "line2.ogg",
+   "line3": "line3.ogg",
+   "line4": "line4.ogg",
+   "collapse": "collapse.ogg",
+   "tspin0": "tspin0.ogg",
+   "tspin1": "tspin1.ogg",
+   "tspin2": "tspin2.ogg",
+   "tspin3": "tspin3.ogg",
+   "tspinmini0": "mini0.ogg",
+   "tspinmini1": "mini1.ogg",
+   "tspinmini2": "mini2.ogg",
+   "irs": "irs.ogg",
+   "ihs": "ihs.ogg",
+   "prespin": "prespin.ogg",
+   "prespinmini": "prespinmini.ogg",
+   "hold": "hold.ogg",
+   "first_hold": "firsthold.ogg",
+   "land": "land.ogg",
+   "lose": "game-lose.ogg",
+   "ready3": "game-3.ogg",
+   "ready2": "game-2.ogg",
+   "ready1": "game-1.ogg",
+   "start": "game-start.ogg",
+   "bravo": "bravo.ogg",
+   "frenzy": "frenzy.ogg",
+   "move": "move.ogg",
+   "rotate": "rotate.ogg",
+   "lock": "lock.ogg",
+   "step": "step.ogg",
+   "ren_end": "ren-end.ogg",
+   "hurry": "hurry.ogg",
+   "hurry2": "hurry2.ogg",
+   "time_up": "timeup.ogg",
+   "garbage": "lineup.ogg",
+   "b2b": "b2b.ogg",
+   "alarm": "alarm.ogg",
+   "topoutwarning": "topoutwarning.ogg"
+  },
+  "ren": {
+   "count": 20,
+   "name": "ren",
+   "prefix": "ren/ren",
+   "extension": "ogg",
+   "html5": false
+  }
+ },
+ "objects_main": {
+  "alarm": {
+   "src": "alarm",
+   "loop": true,
+   "html5": false
+  },
+  "b2b": {
+   "src": "b2b",
+   "loop": false,
+   "html5": false
+  },
+  "bravo": {
+   "src": "bravo",
+   "loop": false,
+   "html5": false
+  },
+  "collapse": {
+   "src": "collapse",
+   "loop": false,
+   "html5": false
+  },
+  "first_hold": {
+   "src": "first_hold",
+   "loop": false,
+   "html5": false
+  },
+  "first_hold_pro": {
+   "src": "first_hold",
+   "loop": false,
+   "html5": false
+  },
+  "frenzy": {
+   "src": "frenzy",
+   "loop": false,
+   "html5": false
+  },
+  "garbage": {
+   "src": "garbage",
+   "loop": false,
+   "html5": false
+  },
+  "harddrop1": {
+   "src": "harddrop",
+   "loop": false,
+   "html5": false
+  },
+  "harddrop2": {
+   "src": "harddrop",
+   "loop": false,
+   "html5": false
+  },
+  "harddrop3": {
+   "src": "harddrop",
+   "loop": false,
+   "html5": false
+  },
+  "harddrop4": {
+   "src": "harddrop",
+   "loop": false,
+   "html5": false
+  },
+  "harddrop_pro": {
+   "src": "harddrop",
+   "loop": false,
+   "html5": false
+  },
+  "hold": {
+   "src": "hold",
+   "loop": false,
+   "html5": false
+  },
+  "hold_pro": {
+   "src": "hold",
+   "loop": false,
+   "html5": false
+  },
+  "hurry": {
+   "src": "hurry",
+   "loop": false,
+   "html5": false
+  },
+  "hurry2": {
+   "src": "hurry2",
+   "loop": false,
+   "html5": false
+  },
+  "ihs": {
+   "src": "ihs",
+   "loop": false,
+   "html5": false
+  },
+  "irs": {
+   "src": "irs",
+   "loop": false,
+   "html5": false
+  },
+  "land": {
+   "src": "land",
+   "loop": false,
+   "html5": false
+  },
+  "line1": {
+   "src": "line1",
+   "loop": false,
+   "html5": false
+  },
+  "line2": {
+   "src": "line2",
+   "loop": false,
+   "html5": false
+  },
+  "line3": {
+   "src": "line3",
+   "loop": false,
+   "html5": false
+  },
+  "line4": {
+   "src": "line4",
+   "loop": false,
+   "html5": false
+  },
+  "line4_b2b": {
+   "src": "line4",
+   "loop": false,
+   "html5": false
+  },
+  "line5": {
+   "src": "line4",
+   "loop": false,
+   "html5": false
+  },
+  "line5_b2b": {
+   "src": "line4",
+   "loop": false,
+   "html5": false
+  },
+  "lock": {
+   "src": "lock",
+   "loop": false,
+   "html5": false
+  },
+  "lose": {
+   "src": "lose",
+   "loop": false,
+   "html5": false
+  },
+  "move": {
+   "src": "move",
+   "loop": false,
+   "html5": false
+  },
+  "prespin": {
+   "src": "prespin",
+   "loop": false,
+   "html5": false
+  },
+  "prespinmini": {
+   "src": "prespinmini",
+   "loop": false,
+   "html5": false
+  },
+  "ready1": {
+   "src": "ready1",
+   "loop": false,
+   "html5": false
+  },
+  "ready2": {
+   "src": "ready2",
+   "loop": false,
+   "html5": false
+  },
+  "ready3": {
+   "src": "ready3",
+   "loop": false,
+   "html5": false
+  },
+  "receive1": {
+   "src": "receive1",
+   "loop": false,
+   "html5": false
+  },
+  "receive2": {
+   "src": "receive2",
+   "loop": false,
+   "html5": false
+  },
+  "receive3": {
+   "src": "receive3",
+   "loop": false,
+   "html5": false
+  },
+  "receive4": {
+   "src": "receive4",
+   "loop": false,
+   "html5": false
+  },
+  "receive5": {
+   "src": "receive5",
+   "loop": false,
+   "html5": false
+  },
+  "ren_end": {
+   "src": "ren_end",
+   "loop": false,
+   "html5": false
+  },
+  "rotate": {
+   "src": "rotate",
+   "loop": false,
+   "html5": false
+  },
+  "start": {
+   "src": "start",
+   "loop": false,
+   "html5": false
+  },
+  "step": {
+   "src": "step",
+   "loop": false,
+   "html5": false
+  },
+  "time_up": {
+   "src": "time_up",
+   "loop": false,
+   "html5": false
+  },
+  "topoutwarning": {
+   "src": "topoutwarning",
+   "loop": true,
+   "html5": false
+  },
+  "tspin0": {
+   "src": "tspin0",
+   "loop": false,
+   "html5": false
+  },
+  "tspin1": {
+   "src": "tspin1",
+   "loop": false,
+   "html5": false
+  },
+  "tspin2": {
+   "src": "tspin2",
+   "loop": false,
+   "html5": false
+  },
+  "tspin3": {
+   "src": "tspin3",
+   "loop": false,
+   "html5": false
+  },
+  "tspin1_b2b": {
+   "src": "tspin1",
+   "loop": false,
+   "html5": false
+  },
+  "tspin2_b2b": {
+   "src": "tspin2",
+   "loop": false,
+   "html5": false
+  },
+  "tspin3_b2b": {
+   "src": "tspin3",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini0": {
+   "src": "tspinmini0",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini1": {
+   "src": "tspinmini1",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini2": {
+   "src": "tspinmini2",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini3": {
+   "src": "tspinmini2",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini1_b2b": {
+   "src": "tspinmini1",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini2_b2b": {
+   "src": "tspinmini2",
+   "loop": false,
+   "html5": false
+  },
+  "tspinmini3_b2b": {
+   "src": "tspinmini2",
+   "loop": false,
+   "html5": false
+  }
+ }
+}

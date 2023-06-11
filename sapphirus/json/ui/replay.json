@@ -1,0 +1,29 @@
+{
+ "header": "replaycenter_header",
+ "props": [
+  {
+   "type": "textbox",
+   "width": "100%",
+   "height": "50%",
+   "background": "#444",
+   "font_size": 1,
+   "color": "#444",
+   "preset": "replay",
+   "onchange": "gameReplayer.data = this.value"
+  },
+  {
+   "string": "replaycenter_start",
+   "type": "button",
+   "desc": "replaycenter_start_desc",
+   "action": "onclick",
+   "onclick": "gameReplayer.evaluateReplay();"
+  },
+  {
+   "string": "replaycenter_loadsaved",
+   "type": "button",
+   "desc": "replaycenter_loadsaved_desc",
+   "action": "onclick",
+   "onclick": "gameReplayer.loadSavedReplays();"
+  }
+ ]
+}

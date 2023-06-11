@@ -1,0 +1,74 @@
+{
+ "header": "set_header_video",
+ "name": "set_video",
+ "props": [
+  {
+   "string": "set_video_particle_level",
+   "type": "settings_slider",
+   "parent_parameter": "video",
+   "parameter": "particleLevel",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_video_blur_level",
+   "type": "settings_slider",
+   "parent_parameter": "video",
+   "parameter": "blurLevel",
+   "default": 2,
+   "disable_loc": "true",
+   "add_inputchange": "gameMenu.changeBlur(this.value);"
+  },
+  {
+   "string": "set_video_field_sway_level",
+   "type": "settings_slider",
+   "parent_parameter": "video",
+   "parameter": "fieldSwayLevel",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_video_field_damage_shake",
+   "type": "settings_slider",
+   "parent_parameter": "video",
+   "parameter": "fieldShakeDamage",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_video_field_size_multiplier",
+   "type": "settings_slider",
+   "parent_parameter": "video",
+   "parameter": "fieldSize",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_video_cleartext",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "video",
+   "parameter": "cleartext",
+   "default": 0
+  },
+  {
+   "string": "set_video_piece_ghost",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "video",
+   "parameter": "pieceGhost",
+   "default": 0
+  },
+  {
+   "string": "set_video_piece_flash",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "video",
+   "parameter": "pieceFlash",
+   "default": 0
+  }
+ ]
+}

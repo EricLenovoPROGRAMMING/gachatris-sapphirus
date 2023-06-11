@@ -1,0 +1,15 @@
+{
+ "header": "set_header_name",
+ "props": [
+  {
+   "type": "textbox",
+   "width": "100%",
+   "height": "10%",
+   "background": "#aaa",
+   "font_size": 1.3,
+   "color": "#fff",
+   "preset": "name",
+   "onchange": "gameStorage.currentSettings.settings.misc.name = this.value; gameStorage.saveStorage();"
+  }
+ ]
+}

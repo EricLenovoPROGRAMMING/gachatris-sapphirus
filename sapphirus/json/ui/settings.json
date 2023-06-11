@@ -1,0 +1,55 @@
+{
+ "header": "menu_settings",
+ "name": "settings",
+ "props": [
+  {
+   "string": "setting_s_tuning",
+   "type": "button",
+   "desc": "setting_s_tuning_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/tuning"
+  },
+  {
+   "string": "setting_s_audio",
+   "type": "button",
+   "desc": "setting_s_audio_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/audio"
+  },
+  {
+   "string": "setting_s_video",
+   "type": "button",
+   "desc": "setting_s_video_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/video"
+  },
+  {
+   "string": "setting_s_name",
+   "type": "button",
+   "desc": "setting_s_name_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/playername"
+  },
+  {
+   "string": "setting_s_character",
+   "type": "button",
+   "desc": "setting_s_character_desc",
+   "action": "onclick",
+   "onclick": "gameMenu.switchMenu(\"add\", \"character\", \"false\", \"3\", \"false\", \"false\", \"setting_character_screen_header\", [`${gachatrisLanguage.transText1(\"setting_character_selecting_you\")}`]); gachatrisCharacter.refreshCharacterGrid(); gachatrisCharacter.resize();"
+  },
+  {
+   "string": "setting_s_mobcon",
+   "type": "button",
+   "desc": "setting_s_mobcon_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/mobcon"
+   },
+  {
+   "string": "setting_s_name",
+   "type": "button",
+   "desc": "setting_s_name_desc",
+   "action": "submenu",
+   "submenu": "ui/settings/playername"
+  }
+ ]
+}

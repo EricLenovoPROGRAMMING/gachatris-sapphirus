@@ -1,0 +1,63 @@
+{
+ "header": "set_header_audio",
+ "name": "set_audio",
+ "props": [
+  {
+   "string": "set_audio_volume_section",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 1
+  },
+  {
+   "string": "set_audio_volume_sfx",
+   "type": "settings_slider",
+   "parent_parameter": "volume",
+   "parameter": "sound",
+   "default": 100,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_audio_volume_mfx",
+   "type": "settings_slider",
+   "parent_parameter": "volume",
+   "parameter": "music",
+   "default": 100,
+   "disable_loc": "true",
+   "add_inputchange": "musicPlayer.changeVol()"
+  },
+  {
+   "string": "set_audio_volume_interface",
+   "type": "settings_slider",
+   "parent_parameter": "volume",
+   "parameter": "interface",
+   "default": 100,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_audio_bank_section",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 1
+  },
+  {
+   "string": "set_audio_bank_sfx",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "audio",
+   "parameter": "soundbank",
+   "default": 0
+  },
+  {
+   "string": "set_audio_bank_music",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "audio",
+   "parameter": "musicbank",
+   "default": 0
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "header": "menu_play",
+ "name": "menu_play",
+ "props": [
+  {
+   "string": "alpha_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 1
+  },
+  {
+   "string": "mode_list_zen",
+   "type": "button",
+   "desc": "mode_list_zen_desc",
+   "action": "submenu",
+   "submenu": "ui/mode/zen"
+  },
+  {
+   "string": "mode_list_1v1",
+   "type": "button",
+   "desc": "mode_list_1v1_desc",
+   "action": "submenu",
+   "submenu": "ui/mode/1v1"
+  },
+  {
+   "string": "mode_list_wormhole",
+   "type": "button",
+   "desc": "mode_list_wormhole_desc",
+   "action": "submenu",
+   "submenu": "ui/mode/wormhole"
+  },
+  {
+   "string": "mode_list_defense",
+   "type": "button",
+   "desc": "mode_list_defense_desc",
+   "action": "submenu",
+   "submenu": "ui/mode/defense"
+  }
+ ]
+}

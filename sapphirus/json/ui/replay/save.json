@@ -1,0 +1,41 @@
+{
+ "header": "replaycenter_s_header",
+ "props": [
+  {
+   "type": "textbox",
+   "width": "100%",
+   "height": "1em",
+   "background": "#444",
+   "font_size": 1,
+   "color": "#fff",
+   "onchange": "gameReplayer.saveDetails.name = this.value;",
+   "show_number": true,
+   "number_template": "(%num/15)",
+   "hint": "replaycenter_s_name_box"
+  },
+  
+  {
+   "string": "replaycenter_s_description",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#fff",
+   "font_size": 1
+  },
+  {
+   "type": "textbox",
+   "width": "100%",
+   "height": "6em",
+   "background": "#444",
+   "font_size": 1,
+   "color": "#fff",
+   "onchange": "gameReplayer.saveDetails.description = this.value"
+  },
+  {
+   "string": "replaycenter_s_savereplay",
+   "type": "button",
+   "desc": "replaycenter_s_savereplay_desc",
+   "action": "onclick",
+   "onclick": "gameReplayer.saveReplayLocal();"
+  }
+ ]
+}

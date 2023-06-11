@@ -1,0 +1,68 @@
+{
+ "header": "set_header_tuning",
+ "name": "set_tuning",
+ "props": [
+  {
+   "string": "set_tuning_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 1
+  },
+  {
+   "string": "set_tuning_autodel",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "autodel",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_tuning_autorate",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "autorate",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_tuning_softdrop",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "softdrop",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_gameplay_tuning_note",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 0.9
+  },
+  {
+   "string": "set_tuning_gravity",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "gravity",
+   "default": 0,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_tuning_preview",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "preview",
+   "default": 5,
+   "disable_loc": "true"
+  },
+  {
+   "string": "set_tuning_lock",
+   "type": "settings_slider",
+   "parent_parameter": "tune",
+   "parameter": "lock",
+   "default": 5,
+   "disable_loc": "true"
+  }
+ ]
+}

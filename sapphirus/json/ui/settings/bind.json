@@ -1,0 +1,66 @@
+{
+ "header": "set_header_bind",
+ "name": "set_bind",
+ "props": [
+  {
+   "string": "set_bind_harddrop",
+   "type": "button_keybind",
+   "desc": "set_bind_harddrop_desc",
+   "keybind": "harddrop"
+  },
+  {
+   "string": "set_bind_softdrop",
+   "type": "button_keybind",
+   "desc": "set_bind_softdrop_desc",
+   "keybind": "softdrop"
+  },
+  {
+   "string": "set_bind_left",
+   "type": "button_keybind",
+   "desc": "set_bind_left_desc",
+   "keybind": "left"
+  },
+  {
+   "string": "set_bind_right",
+   "type": "button_keybind",
+   "desc": "set_bind_right_desc",
+   "keybind": "right"
+  },
+  {
+   "string": "set_bind_cw",
+   "type": "button_keybind",
+   "desc": "set_bind_cw_desc",
+   "keybind": "cw"
+  },
+  {
+   "string": "set_bind_ccw",
+   "type": "button_keybind",
+   "desc": "set_bind_ccw_desc",
+   "keybind": "ccw"
+  },
+  {
+   "string": "set_bind_c180w",
+   "type": "button_keybind",
+   "desc": "set_bind_c180w_desc",
+   "keybind": "c180w"
+  },
+  {
+   "string": "set_bind_hold",
+   "type": "button_keybind",
+   "desc": "set_bind_hold_desc",
+   "keybind": "hold"
+  },
+  {
+   "string": "set_bind_retry",
+   "type": "button_keybind",
+   "desc": "set_bind_retry_desc",
+   "keybind": "retry"
+  },
+  {
+   "string": "set_bind_pause",
+   "type": "button_keybind",
+   "desc": "set_bind_pause_desc",
+   "keybind": "pause"
+  }
+ ]
+}

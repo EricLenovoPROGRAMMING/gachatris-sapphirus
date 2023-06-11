@@ -1,0 +1,23 @@
+{
+ "header": "set_header_mobcon",
+ "name": "set_mobcon",
+ "props": [
+  {
+   "string": "set_mobcon_note_alpha",
+   "type": "text",
+   "text_type": "body",
+   "text_color": "#ff0",
+   "font_size": 1
+  },
+
+  {
+   "string": "set_mobcon_is_enabled",
+   "type": "settingslist_selector",
+   "can_open_window_by_click": true,
+   "category": "settings",
+   "parent_parameter": "mobile_controls",
+   "parameter": "isOn",
+   "default": 0
+  }
+ ]
+}
