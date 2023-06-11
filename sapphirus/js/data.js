@@ -595,7 +595,7 @@ const gameStorage = new class {
       cleartext: 1,
       blurLevel: 0,
       pieceGhost: 1,
-      fieldSize: SETTINGS_RANGE.video.fieldSize.values.indexOf(0.85),
+      fieldSize: 27,
       pieceFlash: 1,
       fieldShakeDamage: 2,
       
