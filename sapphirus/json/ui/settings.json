@@ -38,11 +38,11 @@
    "onclick": "gameMenu.switchMenu(\"add\", \"character\", \"false\", \"3\", \"false\", \"false\", \"setting_character_screen_header\", [`${gachatrisLanguage.transText1(\"setting_character_selecting_you\")}`]); gachatrisCharacter.refreshCharacterGrid(); gachatrisCharacter.resize();"
   },
   {
-   "string": "setting_s_mobcon",
+   "string": "setting_s_bind",
    "type": "button",
-   "desc": "setting_s_mobcon_desc",
+   "desc": "setting_s_bind_desc",
    "action": "submenu",
-   "submenu": "ui/settings/mobcon"
+   "submenu": "ui/settings/bind"
    },
   {
    "string": "setting_s_mobcon",
